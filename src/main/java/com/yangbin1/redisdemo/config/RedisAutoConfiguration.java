@@ -1,6 +1,6 @@
-package com.yangbin1.config;
+package com.yangbin1.redisdemo.config;
 
-import com.yangbin1.utils.CacheUtils;
+import com.yangbin1.redisdemo.utils.CacheUtils;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

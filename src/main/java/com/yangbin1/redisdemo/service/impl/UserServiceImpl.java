@@ -1,12 +1,10 @@
-package com.yangbin1.service.impl;
+package com.yangbin1.redisdemo.service.impl;
 
-import com.yangbin1.service.UserService;
+import com.yangbin1.redisdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @ClassName: UserServiceImpl
@@ -14,7 +12,7 @@ import javax.annotation.Resource;
  * @Date: 2019/6/27 11:41
  * @Description:
  */
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -27,7 +25,10 @@ public class UserServiceImpl implements UserService {
             System.out.println("在redis中取回");
             return string.get(key);
         } else {
-
+            String result = "redistemplate练习";
+            string.set(key,result);
+            System.out.println("数据库中返回");
+            return result;
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.yangbin1.utils;
+package com.yangbin1.redisdemo.utils;
 
 import org.springframework.data.redis.core.RedisTemplate;
 

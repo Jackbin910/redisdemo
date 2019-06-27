@@ -1,4 +1,4 @@
-package com.yangbin1.service;
+package com.yangbin1.redisdemo.service;
 
 /**
  * @ClassName: UserService

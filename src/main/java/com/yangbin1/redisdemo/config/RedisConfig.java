@@ -1,4 +1,4 @@
-package com.yangbin1.config;
+package com.yangbin1.redisdemo.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
