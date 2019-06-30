@@ -1,10 +1,11 @@
 package com.yangbin1.redisdemo.service.impl;
 
 import com.yangbin1.redisdemo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @ClassName: UserServiceImpl
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+    @Resource
     private RedisTemplate<String, String> redisTemplate;
 
     @Override
